@@ -1,0 +1,18 @@
+.menu-container{
+    /* background: #323269; */
+    color: rgb(199, 199, 216);
+}
+
+.menus{
+    padding:8px 14px;
+    text-align: center;
+}
+
+.menus.menu{
+    background: #323269;
+}
+
+.menus:hover:not(.menu){
+    cursor: pointer;
+    background-color: #5757A5;
+}

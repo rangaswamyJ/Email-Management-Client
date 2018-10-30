@@ -1,0 +1,132 @@
+a:active,a:visited,a:focus{
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.msg-list-container{
+    margin-left: 6px;
+    padding: 12px 22px;
+    
+    /* default color if not specified
+     */
+
+     color: rgb(224, 222, 218);
+     height: 100vh;
+     overflow-x: hidden;
+     overflow-y: scroll;
+
+}
+
+
+
+
+.search-box{
+    display: grid;
+    background: #393974;
+    color:rgb(216, 210, 210);
+    grid-template-columns: 90% 10%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.search-box #search{
+    background: transparent;
+    border: none;
+    outline: none;
+    width:100%;
+    color:rgb(161, 161, 161);
+
+    padding: 6px 12px;
+    font-size: 18px;
+    
+}
+
+.search-box .icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+}
+
+
+
+/* list Style here */
+.lists{
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden;
+    overflow-y: scroll; 
+    height: 75vh; */
+}
+
+.lists .list{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: #323269;
+    border-radius: 6px;
+    margin-bottom: 12px;
+
+    display:grid;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.lists .list div{
+    padding: 8px;
+    
+    
+}
+
+/* adding custom style to headings */
+h4,h5,h6{
+    margin: 0;
+    padding: 4px;
+    text-overflow: ellipsis;
+
+}
+
+.msg-box{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
+/* profile iamge style */
+.lists .list .profile-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists .list .profile-box .img img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* positioning the more btn */
+
+.timeline-box{
+    position: relative;
+}
+
+.timeline-box .more{
+    position: absolute;
+    right: -30px;
+    top: 4px;
+    /* visibility: hidden; */
+}
+
+/* this class for currently selected list */
+.lists .list.list-active{
+    background: #6767cf !important;
+}

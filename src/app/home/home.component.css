@@ -1,0 +1,28 @@
+.layer1{
+    display: grid;
+    grid-template-columns: 45% auto;
+    
+}
+
+[class*='layer']{
+    /* border:2px solid red; */
+}
+.layer1{
+    height: 100vh;
+}
+
+.layer1 .left{
+    display: grid;
+    grid-template-columns: 80px auto;
+}
+
+.layer1 .right{
+ 
+}
+
+.layer3.menus{
+    background: #45458d;
+}
+.layer3.msg-list{
+    background: #4d4d99ec;
+}

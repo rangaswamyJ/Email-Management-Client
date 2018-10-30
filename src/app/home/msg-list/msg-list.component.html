@@ -1,0 +1,51 @@
+<div class="msg-list-container">
+  <div class="search-box">
+    <input type="text" name="search" id="search">
+    <div class="icon">
+        <i class="material-icons">search</i>
+    </div>
+  </div>
+
+  <h2>Inbox</h2>
+
+  <div class="lists">
+
+    
+    <div class="list card-4 " *ngFor="let message of messages"
+    routerLink="message/{{message.MessageId}}" 
+    routerLinkActive="list-active"
+    >
+      <div class="profile-box"
+      >
+     
+        <div class="img">
+          <img src="../../../assets/images/profile.jpg" alt="img" width="50px" height="50px">
+        </div>
+      </div>
+
+      <div class="msg-box">
+        <h4 class="user">{{message.UserName}}</h4>
+        <h5 class="title">{{message.Subject}}</h5>
+        
+          <h6 class="desc">
+            {{message.Content}}
+          </h6>
+        
+      </div>
+
+      <div class="timeline-box">
+        <h6 class="day"> {{ message.Date }}</h6>
+        <h6 class="time"> {{ message.Time}} </h6>
+
+        <div class="more">
+          <i class="material-icons">
+            more_vert
+          </i>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+

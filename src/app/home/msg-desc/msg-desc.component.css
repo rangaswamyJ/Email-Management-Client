@@ -1,0 +1,98 @@
+
+.container{
+    padding: 20px 18px;
+}
+
+
+/* list Style here */
+.lists{
+    /* overflow-y: scroll; */
+
+    padding: 14px;
+}
+
+.lists .con{
+    padding: 14px;
+    max-height: 300px;
+    margin-bottom: 12px;
+}
+.lists .list{
+
+    background: #ffffff;
+    /* border-radius: 6px; */
+
+
+    display:grid;
+    grid-template-columns: 80px auto auto;
+    
+    
+}
+
+.lists .list div{
+    padding: 8px;
+    
+    
+}
+
+/* adding custom style to headings */
+h4,h5,h6{
+    color: #505057;
+    margin: 0;
+    padding: 4px;
+    text-overflow: ellipsis;
+
+}
+
+/* .msg-box{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+} */
+
+
+.user{
+    color: #3e3e7e;
+}
+.title{
+    color: #545496e7;
+}
+.day,.time{
+    color: #3e3e41e5;
+}
+
+/* profile iamge style */
+.lists .list .profile-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists .list .profile-box .img img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* positioning the more btn */
+
+.timeline-box{
+    position: relative;
+}
+
+.timeline-box .more{
+    position: absolute;
+    right: -30px;
+    top: 4px;
+    /* visibility: hidden; */
+}
+
+/* this class for currently selected list */
+.lists .list.list-active{
+    background: #6767cf !important;
+}
+
+
+.desc{
+    grid-template-columns: auto auto;
+}

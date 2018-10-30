@@ -1,0 +1,50 @@
+<div class="container">
+
+  <div class="no-msg" *ngIf="noMsg">
+    <h1>no message selected</h1>
+  </div>
+
+  <div class="lists"
+  *ngIf="!noMsg">
+
+    <div class="con card-2">
+      <div class="list">
+        <div class="profile-box"
+        >
+          <div class="img">
+            <img src="../../../assets/images/profile.jpg" alt="img" width="60px" height="60px">
+            
+             <!-- <div class="dp" width="60px" height="60px">
+               {{dp}}
+             </div> -->
+          </div>
+        </div>
+
+        <div class="msg-box">
+          <h4 class="user">{{ message.UserName }}</h4>
+          <h5 class="title">Subject: {{ message.Subject }}</h5>
+          
+           
+          
+        </div>
+
+        <div class="timeline-box">
+          <h6 class="day"> {{ message.Date }}</h6>
+          <h6 class="time"> {{ message.Time}} </h6>
+
+          <div class="more">
+            <i class="material-icons">
+              more_vert
+            </i>
+          </div>
+        </div>
+
+        
+      </div>
+      <h6 class="desc card-1">
+          {{ message.Content }}
+        </h6>
+
+     </div> 
+  </div>
+</div>

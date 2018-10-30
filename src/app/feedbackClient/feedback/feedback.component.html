@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="inner card-2">
+      <h1 class="head">Report a Problem using email..</h1>
+      <h2>Feedback</h2>
+      <div class="body">
+        <div class="box">
+          <h5>Department</h5>
+          <select name="depno" id="dep"
+          >
+            <option 
+            *ngFor="let dep of department"
+            
+            [value]="dep.no">{{ dep.name}}</option>
+          </select>
+        </div>
+        <div class="box">
+          <h5>Subject</h5>
+          <input type="text" class="text-input" name="subject">
+        </div>
+        <div class="box">
+          <h5>Content</h5>
+          <textarea rows="6" cols="50" class="text-input" name="content">
+            </textarea>
+        </div>
+
+  
+        <button (click)="submit" class="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  
